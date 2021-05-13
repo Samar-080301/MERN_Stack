@@ -1,0 +1,16 @@
+{
+  "name": "weather_app",
+  "version": "1.0.0",
+  "description": "creating nodejs weather app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Samar Pratap Singh",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.7",
+    "readline-sync": "^1.4.10",
+    "requests": "^0.3.0"
+  }
+}
