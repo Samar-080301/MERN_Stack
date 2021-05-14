@@ -23,9 +23,6 @@ const server = http.createServer((req,res)=>{
           .on('data',(chunk)=>{
             const objdata = JSON.parse(chunk);
             const arrdata = [objdata];
-            tempdata = (arrdata[0].main.temp-273);
-            tempdata=parseFloat(tempdata).toFixed(2);
-            //console.log(tempdata);
             const realTimeData = arrdata.map((val)=> replaceval(homefile,val)).join("");
                  
             res.write(realTimeData);
